@@ -1,185 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sepidan Organization | Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coming Soon - Sepidan</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
 
-<!-- Font Awesome for Social Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        div {
+            font-family: 'Josefin Slab', serif;
+            font-size: 160px;
+            position: relative;
+        }
 
-<style>
+        .black .coming_soon {
+            position: absolute;
+            bottom: -40px;
+        }
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+        .white .coming_soon {
+            position: absolute;
+            top: -8px;
+        }
+
+        .white {
+            color: #1e3a8a;        /* Blue text */
+            background-color: #fcfcfe;  /* White background */
+            height: 50%;
+            padding: 0 !important;
+        }
+
+        .black {
+            color: #fcfcfe;        /* White text */
+            background-color: #1e3a8a;  /* Blue background */
+            height: 50%;
+            padding: 0 !important;
+        }
+
+        .coming_soon {
+            width: 85%;
+            margin: auto 0;
+            left: 5%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .black .coming_soon { bottom: -18px; }
+            .white .coming_soon { top: -4px; }
+            div { font-size: 72px; }
+        }
+
+        .blinking-dots {
+            display: inline-block;
+        }
+
+        .blinking-dots span {
+            opacity: 0;
+            animation: blink 1.5s infinite;
+        }
+
+        .blinking-dots span:nth-child(1) { animation-delay: 0s; }
+        .blinking-dots span:nth-child(2) { animation-delay: 0.3s; }
+        .blinking-dots span:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+
+
+        }
+.logo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 310px;      /* adjust size if needed */
+    height: auto;
 }
-
-/* HEADER */
-.header {
-    background-color: #158bb3;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-/* LOGO PLACEHOLDER */
-.logo-placeholder {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    margin: 0 auto 20px auto;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #158bb3;
-    font-weight: bold;
-}
-
-/* TITLE */
-.header h1 {
-    margin: 10px 0;
-    font-size: 40px;
-}
-
-.header p {
-    font-size: 18px;
-}
-
-/* JOB SECTION */
-.jobs {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.jobs h2 {
-    color: #158bb3;
-    margin-bottom: 40px;
-}
-
-.job-card {
-    background: white;
-    width: 320px;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    display: inline-block;
-    vertical-align: top;
-}
-
-.job-card h3 {
-    color: #0f6d8c;
-}
-
-.job-card p {
-    font-size: 15px;
-    margin-bottom: 25px;
-}
-
-.apply-btn {
-    background-color: #f5c400;
-    color: black;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.apply-btn:hover {
-    background-color: #e0b000;
-}
-
-/* SOCIAL SECTION */
-.social {
-    background-color: #e9eef1;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.social a {
-    font-size: 26px;
-    margin: 0 15px;
-    color: #158bb3;
-    text-decoration: none;
-}
-
-.social a:hover {
-    color: #f5c400;
-}
-
-/* FOOTER */
-footer {
-    background-color: #1f3f53;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-footer p {
-    margin: 5px;
-}
-
-</style>
+    </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<section class="header">
-
-    <!-- LOGO PLACEHOLDER -->
-    <div class="logo-placeholder">
-        LOGO
+    <div class="black">
+        <div class="coming_soon">COMING</div>
     </div>
-
-    <h1>Volunteer Opportunities</h1>
-    <p>Join Sepidan Organization and make a difference through innovation and community impact.</p>
-</section>
-
-<!-- JOB POSITIONS -->
-<section class="jobs">
-    <h2>Open Positions</h2>
-
-    <div class="job-card">
-        <h3>Robotics Mentor</h3>
-        <p>Guide students in robotics, programming, and innovation projects.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDLElxePB2mNcrdsTM2Rk6MJncYiukLZV1eSD3rCmiVwiyFA/viewform?usp=header" target="_blank" class="apply-btn">Apply Now</a>
+    <div class="white">
+        <div class="coming_soon">SOON<span class="blinking-dots"><span>.</span><span>.</span><span>.</span></span></div>
     </div>
-
-    <div class="job-card">
-        <h3>Community Outreach Coordinator</h3>
-        <p>Build partnerships, manage events, and expand our educational programs.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDLElxePB2mNcrdsTM2Rk6MJncYiukLZV1eSD3rCmiVwiyFA/viewform?usp=header" target="_blank" class="apply-btn">Apply Now</a>
-    </div>
-
-    <div class="job-card">
-        <h3>Administrative Volunteer</h3>
-        <p>Support documentation, communication, and internal coordination.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDLElxePB2mNcrdsTM2Rk6MJncYiukLZV1eSD3rCmiVwiyFA/viewform?usp=header" target="_blank" class="apply-btn">Apply Now</a>
-    </div>
-
-</section>
-
-<!-- SOCIAL MEDIA -->
-<section class="social">
-    <h3>Connect With Us</h3>
-    <a href="https://www.instagram.com/sepidan_organization/" target="_blank"><i class="fab fa-instagram"></i></a>
- <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDLElxePB2mNcrdsTM2Rk6MJncYiukLZV1eSD3rCmiVwiyFA/viewform?usp=header" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/company/sepidan-organization" target="_blank"><i class="fab fa-linkedin"></i></a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Sepidan Organization</p>
-   <p>Email: info@sepidan.org</p>
-</footer>
-
+<img src="\logo.png" alt="Sepidan Logo" class="logo">
 </body>
-
 </html>
-
-
